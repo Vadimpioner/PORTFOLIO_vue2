@@ -1,0 +1,9 @@
+.opacity {
+    transition: opacity .3s;
+    @media(min-width: 1201px) {
+        &:hover {
+            opacity: .7;
+            transition: opacity .3s;
+        }
+    }
+}

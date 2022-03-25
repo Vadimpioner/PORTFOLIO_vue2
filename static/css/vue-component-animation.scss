@@ -1,0 +1,30 @@
+.accordion-enter-active,
+.accordion-leave-active {
+    will-change: height, opacity, padding-top, padding-bottom;
+    transition: height .5s ease, opacity .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+    overflow: hidden;
+}
+
+.accordion-enter,
+.accordion-leave-to {
+    height: 0 !important;
+    opacity: 0;
+}
+
+//////////////////////
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s ease;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter,
+.fade-leave-active {
+    .CommonModal__content {
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,198 @@
+div.TEMPLATE.theme-light {
+        background: $gradient_light;
+        .container {
+            background: white;
+            .Header {
+                background: white;
+                .d-flex.fd-r {
+                    .fz-20.fw600 {
+                        background: linear-gradient(90deg, #2880d8 5%, #ac73cf 42%, #ee68a4 72%);
+                        background-size: 400%;
+                        -webkit-background-clip: text;
+                    }
+                    a {
+                        @media(min-width: 1201px) {
+                            &::after {
+                                background: $gradient_light;
+                            }
+                            &:hover {
+                                color: $black;
+                                &::after {
+                                    background: $gradient_light;
+                                }
+                            }
+                        }
+                    }
+                    .nuxtLinkActive {
+                        background: $gradient_light;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        &::after {
+                            background: $gradient_light;
+                        }
+                    }
+                    .this_button {
+                        span {
+                            background: $gradient_light;
+                        }
+                    }
+                    .d-flex.fd-r {
+                        &::before {
+                            background-image: $gradient_light;
+                        }
+                    }
+                }
+            }
+            .Footer {
+                &__bg {
+                    fill: $black;
+                }
+                .d-flex.fd-c.jcfe.aic {
+                    background: $black;
+                    .d-flex.fd-r.aic {
+                        a {
+                            svg {
+                                width: 100%;
+                                stroke: white;
+                            }
+                            svg[alt=telegram] {
+                                fill: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .About {
+                &__block1 {
+                    .d-flex.fd-r.aic {
+                        .d-flex.jcc.flex-1 {
+                            .circle {
+                                background: $gradient_light;
+                            }
+                        }
+                        .flex-1 {
+                            .d-flex.fd-r.flex-w {
+                                .fz-16.fw400.white {
+                                    border-color: $pink;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__block2 {
+                    .d-flex.fd-c.pos-r.w100 {
+                        &::after {
+                            background: $black;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                            border-color: white !important;
+                            background: $pink !important;
+                        }
+                        &::-webkit-scrollbar-track {
+                            background: white !important;
+                        }
+                        .d-flex.fd-r.m-0-auto {
+                            .d-flex.fd-c.pos-r {
+                                &::after {
+                                    border-color: $black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .Works {
+                &__block1 {
+                    .d-grid {
+                        .d-inline-f.pos-r {
+                            border-color: $pink;
+                            .material-icons.pos-a.blue.c-p {
+                                color: $pink;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .TEMPLATE__wrapper {
+            &::-webkit-scrollbar-thumb {
+                border-color: white !important;
+                background: $gradient_light !important;
+            }
+            &::-webkit-scrollbar-track {
+                background: white !important;
+            }
+        }
+        // components
+        .CommonButton {
+            background: $pink;
+            box-shadow: 0 2px 5px $pink;
+            @media(min-width: 1201px) {
+                &:hover {
+                    box-shadow: 0 3px 10px $pink;
+                }
+            }
+            .d-flex.aic.c-gap-6 {
+                .material-icons-outlined.fz-20.white, .fz-16.white {
+                    color: white;
+                }
+            }
+        }
+        .CommonModal {
+            &__content {
+                background: $pink;
+            }
+            &__body {
+                .fz-16.white.fw400 {
+                    color: white;
+                }
+                &::-webkit-scrollbar-thumb {
+                    border-color: $pink !important;
+                    background: $gradient_light !important;
+                }
+                &::-webkit-scrollbar-track {
+                    background: $pink !important;
+                }
+            }
+        }
+        // color
+        .white {
+            color: $black;
+        }
+        .black {
+            color: white;
+        }
+}
+
+@media(max-width: 680px) {
+    div.TEMPLATE.theme-light {
+        .container {
+            .Header {
+                .d-flex.fd-r {
+                    .d-flex.fd-r {
+                        .fz-20.white.fw500 {
+                            color: white;
+                        }
+                        .nuxtLinkActive {
+                            color: white;
+                            background: unset;
+                            -webkit-text-fill-color: unset;
+                            &::after {
+                                background: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .About {
+                &__block2 {
+                    .d-flex.fd-r.jcc {
+                        &::after {
+                            background: $black
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

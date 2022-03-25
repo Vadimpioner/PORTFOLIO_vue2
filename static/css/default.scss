@@ -1,0 +1,88 @@
+////////////////////// глобальные настройки
+* {
+    box-sizing: border-box;
+    transition: color .3s;
+}
+
+a {
+    text-decoration: none;
+    width: max-content;
+}
+
+img {
+    width: max-content;
+    user-select: none;
+    object-fit: contain;
+}
+
+.material-icons {
+    user-select: none;
+}
+
+::selection {
+    // выделение текста
+    color: white;
+    background-color: #1CA633;
+}
+
+::-webkit-scrollbar {
+    @include adaptive_value('width', 12, 4, 1, 320);
+    @include adaptive_value('height', 12, 4, 1, 320);
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $gradient;
+    @include adaptive_value('border-radius', 12, 4, 1, 320);
+}
+
+////////////////////// сброс
+button,
+button:hover,
+li:hover,
+a:hover,
+li,
+a,
+*:hover,
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    background: unset;
+    border: unset;
+    padding: 0;
+    cursor: pointer;
+}
+
+:-webkit-any(article, aside, nav, section) h1,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}

@@ -1,0 +1,49 @@
+$black: #101010;
+$basic: #343434;
+$gray: #DCDCDC;
+$blue: #0095B7;
+$red: #EF0000;
+$yellow: #fbec5d;
+$orange: #FF7F00;
+$pink: #ee68a4;
+$gradient: linear-gradient(180deg, #008dc3, #026773, #092c4e);
+$gradient_light: linear-gradient(360deg, #2880d8,#ac73cf,#ee68a4);
+.black {
+    color: $black;
+}
+
+.basic {
+    color: $basic;
+}
+
+.gray {
+    color: $gray;
+}
+
+.blue {
+    color: $blue;
+}
+
+.red {
+    color: $red;
+}
+
+.gradient {
+    color: $gradient;
+}
+
+.gradient_light {
+    color: $gradient_light;
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.orange {
+    color: $orange;
+}
+
+.white {
+    color: #ffffff;
+}
