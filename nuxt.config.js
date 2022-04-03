@@ -26,7 +26,6 @@ export default {
     ],
 
     plugins: [
-        '~/plugins/components.js',
     ],
 
     components: true,
